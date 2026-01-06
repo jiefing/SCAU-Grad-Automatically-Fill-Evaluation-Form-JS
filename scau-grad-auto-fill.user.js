@@ -136,12 +136,13 @@
         
         for (const input of inputs) {
             // 跳过已填写的和特殊输入框（如验证码、姓名等）
+            const placeholder = input.placeholder || '';
             if (!input.value && 
                 !input.readOnly && 
                 !input.disabled &&
-                !input.placeholder.includes('姓名') &&
-                !input.placeholder.includes('学号') &&
-                !input.placeholder.includes('验证码')) {
+                !placeholder.includes('姓名') &&
+                !placeholder.includes('学号') &&
+                !placeholder.includes('验证码')) {
                 
                 const comment = randomChoice(CONFIG.textComments);
                 input.value = comment;
