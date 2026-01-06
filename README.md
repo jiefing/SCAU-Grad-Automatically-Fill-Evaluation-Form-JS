@@ -1,8 +1,7 @@
 # SCAU-Grad-Automatically-Fill-Evaluation-Form-JS
 ---
 
-本脚本为Tampermonkey脚本，
-本脚本用于 **华南农业大学研究生教务管理系统(https://yjsglxt.scau.edu.cn/signinS.aspx)** ，作用为自动填写评教表
+本脚本为Tampermonkey脚本，用于 **华南农业大学研究生教务管理系统(https://yjsglxt.scau.edu.cn/signinS.aspx)** ，作用为自动填写评教表
 
 目前是2026/1/6，可以正常使用
 
