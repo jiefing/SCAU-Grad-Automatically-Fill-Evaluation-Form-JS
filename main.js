@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      1.0
 // @description  用于华南农业大学研究生教务系统评教
-// @author       jtfing
+// @author       jiefing
 // @match        https://yjsglxt.scau.edu.cn/*TeachEvalGrade.aspx*
 // @grant        GM_addElement
 // ==/UserScript==
