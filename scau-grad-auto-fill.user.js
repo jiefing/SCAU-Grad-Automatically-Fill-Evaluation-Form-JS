@@ -177,7 +177,12 @@
             // 如果启用自动提交
             if (CONFIG.autoSubmit) {
                 await delay(1000);
-                const submitBtn = document.querySelector('button[type="submit"], input[type="submit"], button:contains("提交")');
+                let submitBtn = document.querySelector('button[type="submit"], input[type="submit"]');
+                if (!submitBtn) {
+                    // 尝试查找包含"提交"文本的按钮
+                    const buttons = Array.from(document.querySelectorAll('button'));
+                    submitBtn = buttons.find(btn => btn.textContent.includes('提交'));
+                }
                 if (submitBtn) {
                     console.log('准备提交表单...');
                     submitBtn.click();
